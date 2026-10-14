@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Isabella ❤️</title>
+<style>
+:root{--pink:#f01468;--deep:#671342;--soft:#ffe3ef;--cream:#fff7fb}
+*{box-sizing:border-box}body{margin:0;font-family:'Trebuchet MS',Arial,sans-serif;color:#7b1749;background:radial-gradient(circle at 10% 10%,#fff 0 2px,transparent 3px),linear-gradient(145deg,#ffd6e7,#fff1f7 50%,#ffc7df);background-size:34px 34px,auto;min-height:100vh;overflow-x:hidden}
+.heart{position:fixed;bottom:-30px;color:#ff7cac;opacity:.45;animation:float 9s linear infinite;pointer-events:none;z-index:0}@keyframes float{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+main{position:relative;z-index:1;max-width:780px;margin:auto;padding:24px 15px 60px}.panel{background:#fff8fcdd;border:1px solid #ff9fc7;border-radius:28px;box-shadow:0 15px 45px #bc3c7740;padding:28px;margin:18px 0;text-align:center}
+.hidden{display:none!important}.eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:.75rem;color:#b53b70}h1{font-size:clamp(2.3rem,8vw,4.6rem);line-height:1.05;margin:12px 0;color:var(--pink);text-shadow:0 3px 0 #ffc3dc}h2{color:var(--pink);font-size:clamp(1.7rem,5vw,2.5rem);margin:8px 0 20px}p{line-height:1.7}.lock-heart{font-size:clamp(8rem,30vw,13rem);line-height:1.15;filter:drop-shadow(0 8px 12px #e54a9440)}
+input,button{font:inherit;border-radius:999px;border:2px solid #f38bb8;padding:13px 17px}input{background:white;color:#7b1749;max-width:100%}button{background:var(--pink);color:white;font-weight:bold;cursor:pointer;box-shadow:0 5px 0 #bd0c50;transition:.15s}button:hover{transform:translateY(-2px)}.hint{font-size:.9rem;color:#9c4b70}.error{color:#c00046;font-weight:bold;min-height:1.4em}
+.hero{padding-top:42px}.subtitle{font-size:1.15rem}.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.photo{min-height:190px;border-radius:20px;background:linear-gradient(145deg,#f7a6cb,#6c194f);display:flex;align-items:center;justify-content:center;color:white;padding:18px;overflow:hidden;position:relative}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo span{position:relative;text-shadow:0 2px 8px #3a0020;font-weight:bold}.timer{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.timebox{background:#ffe1ed;border:1px solid #f58bb7;border-radius:18px;padding:18px 6px}.timebox strong{display:block;color:var(--pink);font-size:clamp(1.5rem,5vw,2.4rem)}.timebox small{font-weight:bold;letter-spacing:1px}.letter{text-align:left;white-space:pre-line;font-size:1.05rem}.music{display:inline-block;margin-top:10px;color:#b70e57;font-weight:bold}.footer{font-size:.85rem;text-align:center;color:#9f4a70;padding:15px}
+@media(max-width:480px){.panel{padding:22px 17px}.photo-grid{grid-template-columns:1fr}.photo{min-height:230px}.timer{gap:7px}.timebox{padding:14px 3px}}
+</style></head>
+<body>
+<main>
+<section class="panel" id="gate">
+<div class="eyebrow">Una sorpresa para ti</div><div class="lock-heart">💗🔒</div>
+<h2>Ingresa la fecha correcta...</h2><p>La fecha en que nos conocimos ✨</p>
+<form id="unlockForm"><input id="secretDate" type="date" aria-label="Fecha especial" required><button type="submit">Abrir mi corazón 💘</button></form>
+<p class="hint">Solo tú conoces la clave de nuestra historia.</p><p class="error" id="error"></p>
+</section>
+<div id="content" class="hidden">
+<section class="panel hero"><div class="eyebrow">Feliz cumpleaños, mi amor</div><h1>Isabella ❤️</h1><p class="subtitle">A la mujer que hace latir mi corazón más fuerte cada día.</p><div style="font-size:3rem">🌹💋🌹</div><p>Esta pequeña página es para recordarte lo inmensamente especial que eres para mí.</p>
+<a class="music" href="https://www.youtube.com/results?search_query=tiroteo+Rauw+Alejandro+Pol+Granch" target="_blank" rel="noopener">▶ Escuchar “Tiroteo” juntos 🎶</a></section>
+<section class="panel"><h2>Nuestros recuerdos 📸</h2><p>Cambia estos espacios por nuestras fotos favoritas.</p><div class="photo-grid">
+<div class="photo"><img src="IMG_170917658751F.jpg"><span>📷 Nuestro primer recuerdo</span></div><div class="photo"><img src="IMG_20240314_134404_446.jpg"><span>💞 Un momento inolvidable</span></div><div class="photo"><img src="IMG_20250105_141939.jpg"><span>🌅 Tú y yo contra el mundo</span></div><div class="photo"><img src="IMG_20250215_220214.jpg"><span>♾️ Todos los que nos faltan</span></div>
+</div></section>
+<section class="panel"><h2>Nuestro tiempo juntos ⏳</h2><p>Y cada segundo a tu lado vale la pena.</p><div class="timer"><div class="timebox"><strong id="years">0</strong><small>AÑOS</small></div><div class="timebox"><strong id="months">0</strong><small>MESES</small></div><div class="timebox"><strong id="days">0</strong><small>DÍAS</small></div><div class="timebox"><strong id="hours">0</strong><small>HORAS</small></div><div class="timebox"><strong id="minutes">0</strong><small>MINUTOS</small></div><div class="timebox"><strong id="seconds">0</strong><small>SEGUNDOS</small></div></div></section>
+<section class="panel"><h2>Una carta para mi corazón 💌</h2><div class="letter">Mi Isabella, mi amor:
+
+Yo sé que muchas veces no te demuestro el amor tan grande que siento por ti, y sé que en eso estoy mal. Créeme que te amo con todo mi corazón. Sé que los años anteriores tus cumpleaños no han sido especiales, pero de verdad espero que este sí lo sea y que puedas sentir, aunque sea un poquito, todo lo que significas para mí.
+
+Eres mi compañera, mi lugar seguro y una de las razones más bonitas que tengo para seguir creciendo. A veces me cuesta encontrar las palabras o demostrarte lo que llevo dentro, pero nunca quiero que dudes de que mi corazón te elige a ti. Quiero seguir creando recuerdos contigo, hacerte sonreír, cuidarte y demostrarte con hechos que mereces un amor bonito, sincero y lleno de pasión.
+
+Feliz cumpleaños, mi vida. Ojalá este nuevo año te regale tanta felicidad como la que tú le das a mi mundo. Te amo más de lo que muchas veces sé expresar, y quiero seguir construyendo nuestra historia contigo, una página a la vez.
+
+Con todo mi amor, hoy y siempre. ❤️</div></section>
+<section class="panel"><h2>Mi deseo para ti 🎂</h2><p>Que nunca te falten razones para sonreír, sueños por cumplir y abrazos míos en los días difíciles. Feliz cumpleaños, mi esposa hermosa. Te volvería a elegir en esta vida y en todas las que existan. 💖</p><div style="font-size:2.4rem">💗✨💗</div></section>
+</div><div class="footer">Hecho con amor, especialmente para Isabella ❤️</div>
+</main>
+<script>
+// PERSONALIZA ESTAS DOS FECHAS con el formato AAAA-MM-DD:
+const FECHA_EN_QUE_SE_CONOCIERON = '2023-02-06'; // Cámbiala por la fecha real para que funcione el candado.
+const FECHA_INICIO_RELACION = '2023-02-18'; // Cámbiala por la fecha en que comenzó su historia.
+const form=document.getElementById('unlockForm');
+form.addEventListener('submit',e=>{e.preventDefault();const entered=document.getElementById('secretDate').value;if(entered===FECHA_EN_QUE_SE_CONOCIERON){document.getElementById('gate').classList.add('hidden');document.getElementById('content').classList.remove('hidden');startTimer();window.scrollTo({top:0,behavior:'smooth'});}else{document.getElementById('error').textContent='Esa no es la fecha, mi amor. Inténtalo otra vez 💗';}});
+function startTimer(){const start=new Date(FECHA_INICIO_RELACION+'T00:00:00');function update(){const now=new Date();let y=now.getFullYear()-start.getFullYear(),m=now.getMonth()-start.getMonth(),d=now.getDate()-start.getDate();if(d<0){m--;d+=new Date(now.getFullYear(),now.getMonth(),0).getDate()}if(m<0){y--;m+=12}const diff=Math.max(0,now-start);document.getElementById('years').textContent=Math.max(0,y);document.getElementById('months').textContent=Math.max(0,m);document.getElementById('days').textContent=Math.max(0,d);document.getElementById('hours').textContent=Math.floor(diff/36e5)%24;document.getElementById('minutes').textContent=Math.floor(diff/6e4)%60;document.getElementById('seconds').textContent=Math.floor(diff/1000)%60;}update();setInterval(update,1000)}
+// Corazones flotantes decorativos
+for(let i=0;i<18;i++){const h=document.createElement('div');h.className='heart';h.textContent=['♥','♡','💗'][i%3];h.style.left=(Math.random()*100)+'%';h.style.animationDuration=(7+Math.random()*8)+'s';h.style.animationDelay=(-Math.random()*12)+'s';h.style.fontSize=(15+Math.random()*25)+'px';document.body.appendChild(h)}
+</script></body></html>
